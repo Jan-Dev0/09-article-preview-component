@@ -15,8 +15,12 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/19f117a27b.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
-    <script src="main.jes"></script>
+    <script src="main.js" defer></script>
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
@@ -28,54 +32,61 @@
           class="card__image"
         />
       </div>
-      <div class="card__text-content">
-        <h2 class="card__headline">
-          Shift the overall look and feel by adding these wonderful touches to
-          furniture in your home
-        </h2>
-        <p class="card__description">
-          Ever been in a room and felt like something was missing? Perhaps it
-          felt slightly bare and uninviting. I've got some simple tips to help
-          you make any room feel complete.
-        </p>
+      <div class="card__content">
+        <div class="card__text-content">
+          <h2 class="card__headline">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h2>
+          <p class="card__description">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I've got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </div>
+
+        <footer class="card__footer">
+          <div class="card__author-wrapper">
+            <img
+              src="./images/avatar-michelle.jpg"
+              alt="Michelle Appleton"
+              class="card__avatar"
+            />
+            <div class="card__author-info">
+              <p class="card__author-name">Michelle Appleton</p>
+              <p class="card__date">28 Jun 2020</p>
+            </div>
+          </div>
+
+          <div class="card__social-links-wrapper">
+            <div class="card__social-links">
+              Share
+              <img
+                src="./images/icon-facebook.svg"
+                alt="Facebook icon"
+                class="card__icons"
+              />
+              <img
+                src="./images/icon-twitter.svg"
+                alt="Twitter icon"
+                class="card__icons"
+              />
+              <img
+                src="./images/icon-pinterest.svg"
+                alt="Pinterest icon"
+                class="card__icons"
+              />
+            </div>
+            <svg class="card__caret" width="20" height="20">
+              <polygon points="0,0 10,10 20,0"  />
+            </svg>
+          </div>
+
+          <div class="card__share-icon" id="card__share-icon">
+            <i class="fa-solid fa-share"></i>
+          </div>
+        </footer>
       </div>
-      <footer class="card__footer">
-        <img
-          src="./images/avatar-michelle.jpg"
-          alt="Michelle Appleton"
-          class="card__avatar"
-        />
-        <div class="card__author-info">
-          <p class="card__author-name">Michelle Appleton</p>
-          <p class="card__date">28 Jun 2020</p>
-        </div>
-        <div class="card__social-links">
-
-
-            Share
-            <img
-              src="./images/icon-facebook.svg"
-              alt="Facebook icon"
-              class="card__icons"
-            />
-            <img
-              src="./images/icon-twitter.svg"
-              alt="Twitter icon"
-              class="card__icons"
-            />
-            <img
-              src="./images/icon-pinterest.svg"
-              alt="Pinterest icon"
-              class="card__icons"
-            />
-
-        </div>
-        <img
-        src="./images/icon-share.svg"
-        alt="Share icon"
-        class="card__share-icon"
-      />
-      </footer>
     </article>
   </body>
 </html>
